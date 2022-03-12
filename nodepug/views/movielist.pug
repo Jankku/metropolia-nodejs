@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Movies
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+  body
+  div.container
+    div
+      a(href='/addmovie').btn.btn-primary.my-3 Add movie
+    div
+      table.table.table-striped
+        tbody
+          each movie in movies
+            tr
+              td #{movie.title}
+              td #{movie.director}
+              td #{movie.year}

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Add movie
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+  body
+    div.container
+        h1.fs-l New movie
+        form(action='/addmovie', method='post').form-group
+          div.my-2
+              input(type="text", id="title", name="title", placeholder="Title").form-control
+          div.my-2
+              input(type="text", id="director", name="director", placeholder="Director").form-control
+          div.my-2
+              input(type="number", id="year", name="year", placeholder="Year").form-control
+          div.my-2
+              input(type="submit", id="Add", value="Add").btn.btn-primary
